@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment1 - Amer Nour Eddin - 213171245</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="d3.v4.js"></script>
+<script type="text/javascript" src="code.js"></script>
+
+
+</head>
+
+<body onload="d3chart()">
+<h1>Budget Tracker</h1>
+
+<p>
+
+<span style="float:left;">Initial Budget: <input type="text" id="myBudget" value="" placeholder="Enter Budget">&nbsp;<span>$</span></span>
+<span style="float:right;">Initial Budget: <span id="ibudget">0</span>&nbsp;<span>$</span></span>
+
+</p>
+<br />
+<p>
+  <span style="float: left">
+      <button class="set set1" onclick="SetFunction()">Set</button>
+      <button class="reset reset1" onclick="ResetFunction()">Reset</button>
+  </span>
+    <span style="float:right">Total Expenses: <span id="totalex">0</span>&nbsp;<span>$</span></span>
+</p>
+<br />
+<p >
+    <span style="float:right;">Remaining Budget: <span id="rembudget">0</span>&nbsp;<span id="dolar">$</span></span>
+</p>
+<br />
+<br />
+
+<table>
+
+  <tr class="cat">
+    <th><button onclick="assignColor('sport')" class="catbutt">Sports</button></th>
+    <th><button onclick="assignColor('lux')" class="catbutt">Luxury</button></th>
+      <th><button onclick="assignColor('food')" class="catbutt">Food</button></th>
+  </tr>
+  <tr class="p">
+      <td class="sport"><button onclick="function300(); changecolor()">Tracksuit</button></td>
+    <td class="lux"><button onclick="function150(); changecolor()">Sunglasses</button></td>
+      <td class="food"><button onclick="function2(); changecolor()">Apple</button></td>
+  </tr>
+  <tr class="p">
+    <td class="sport"><button onclick="function100(); changecolor()">Shoes</button></td>
+    <td class="lux"><button onclick="function1000(); changecolor()">Watch</button></td>
+      <td class="food"><button onclick="function1(); changecolor()">Cucumber</button></td>
+  </tr>
+      <tr class="p">
+    <td class="sport"><button onclick="function200(); changecolor()">Racket</button></td>
+    <td class="lux"><button onclick="function500(); changecolor()">Necklace</button></td>
+      <td class="food"><button onclick="function10(); changecolor()">Chicken</button></td>
+  </tr>
+      <tr class="p">
+    <td class="sport"><button onclick="function20(); changecolor()">Tennis Ball</button></td>
+    <td class="lux"><button onclick="function5(); changecolor()">Coffee</button></td>
+      <td class="food"><button onclick="function15(); changecolor()">Rice</button></td>
+  </tr>
+      <tr class="p">
+    <td class="sport"><button onclick="ofunctionsport(); changecolor()">Other</button></td>
+    <td class="lux"><button onclick="ofunctionlux(); changecolor()">Other</button></td>
+      <td class="food"><button onclick="ofunctionfood(); changecolor()">Other</button></td>
+  </tr>
+
+</table>
+
+<p>
+    <span style="float:left;">Price-Tag (Other): <input type="text" id="pricetag" placeholder="Enter the price.."></span>
+    &nbsp;&nbsp;
+    <span > <input class="minus" type="button" value="-" onclick="minusFunction()"/> </span>
+    <span > <input title="X item" type="text"  value="1" size="1" id="counter"> </span>
+    <span > <input class="plus" type="button" value="+" onclick="plusFunction()"/> </span>
+</p>
+
+<div id="platt">
+    <table>
+    <tr>
+        <td><button title="Red" onclick="takeColor('red')" id="red" style="background-color: red"></button></td>
+        <td><button title="Red orange" onclick="takeColor('redorange')" id="redorange" style="background-color: orangered"></button></td>
+        <td><button title="Orange" onclick="takeColor('orange')" id="orange" style="background-color: darkorange"></button></td>
+        <td><button title="Orange yellow" onclick="takeColor('orangeyellow')" id="orangeyellow" style="background-color: #dab03a"></button></td>
+        <td><button title="Yellow" onclick="takeColor('yellow')" id="yellow" style="background-color: #d3d300"></button></td>
+        <td><button title="Yellow green" onclick="takeColor('yellowgreen')" id="yellowgreen" style="background-color: #8cd229"></button></td>
+        <td><button title="Green" onclick="takeColor('green')" id="green" style="background-color: #4CAF50"></button></td>
+        <td><button title="Blue green" onclick="takeColor('bluegreen')" id="bluegreen" style="background-color: #168b73"></button></td>
+        <td><button title="Blue" onclick="takeColor('blue')" id="blue" style="background-color: #00bfbf"></button></td>
+        <td><button title="Blue violet" onclick="takeColor('blueviolet')" id="blueviolet" style="background-color: blueviolet"></button></td>
+        <td><button title="Violet" onclick="takeColor('violet')" id="violet" style="background-color: #800080"></button></td>
+        <td><button title="Violet red" onclick="takeColor('violetred')" id="violetred" style="background-color: mediumvioletred"></button></td>
+
+    </tr>
+    </table>
+</div>
+
+</body>
+</html>
