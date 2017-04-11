@@ -1,0 +1,17 @@
+svg{
+    border: ridge;
+    position: absolute;
+    bottom: 90px;
+}
+div{
+    height: 1000px;
+    width: 600px;
+}
+select{
+    position: absolute;
+
+}
+form{
+    float: right;
+}
+

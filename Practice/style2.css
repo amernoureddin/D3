@@ -1,0 +1,6 @@
+.axis path,
+.axis line {
+stroke: red;}
+.axis text {
+font-family: sans-serif;
+font-size: 11px; }

@@ -1,0 +1,32 @@
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 130px;
+  height: 23px;
+  padding: 2px;
+  font: 11px sans-serif;
+  background: lightsteelblue;
+  border: 1px;
+  border-radius: 10px;
+  pointer-events: none;
+
+}
+
+circle{
+    fill-opacity: 0.9;
+    /*stroke: black;*/
+    cursor: pointer;
+}
+
+svg{
+    border-style: ridge;
+        /*position: absolute;*/
+    /*float: right;*/
+    /*bottom: auto;*/
+    /*align-self: center;*/
+}
+
+.myLabel{
+    /*font-style: oblique;*/
+    fill: #060201;
+}
