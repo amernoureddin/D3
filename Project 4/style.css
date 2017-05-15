@@ -1,0 +1,38 @@
+
+#tooltip {
+        		position: absolute;
+        		width: 100px;
+        		height: auto;
+        		padding: 10px;
+        		background-color: white;
+        		border-radius: 10px;
+        		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        		pointer-events: none;
+		}
+
+#tooltip.hidden {
+        display: none;
+}
+
+
+#tooltipLine {
+        		position: absolute;
+        		width: 400px;
+        		height: auto;
+        		padding: 10px;
+        		background-color: white;
+        		border-radius: 10px;
+        		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        		pointer-events: none;
+		}
+#tooltipLine.hidden {
+        display: none;
+}
+
+.line1 {
+    fill: none;
+    stroke: red;
+    stroke-width: 1.5px;
+}
+
+

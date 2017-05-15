@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment4 - Amer Nour Eddin - 213171245</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="d3.v4.js"></script>
+
+</head>
+<body>
+    <form>
+     Layout:
+         <br>
+        <label><input type="radio" name="layout" id="radial"> Radial</label>
+        <label><input type="radio" name="layout" id="tree" checked> Tree</label>
+    </form>
+
+    <form>
+     Color:
+         <br>
+        <label><input type="radio" name="color" id="nocolor"> None</label>
+        <label><input type="radio" name="color" id="color_cont" checked> Continent</label>
+    </form>
+    <form>
+     Sort By:
+         <br>
+        <label><input type="radio" name="color" id="sort_pop" > Population</label>
+        <label><input type="radio" name="color" id="sort_gdp" > GDP</label>
+        <label><input type="radio" name="color" id="sort_cont" checked> Continent</label>
+    </form>
+
+    <div id="tooltip" class="hidden">
+            <p><span id="name">abc</span></p>
+            <p><span id="valueP">100</span></p>
+            <p><span id="valueG">100</span></p>
+    </div>
+    <div id="tooltipLine" class="hidden">
+    </div>
+
+
+        <script type="text/javascript" src="code.js"></script>
+</body>
+</html>
